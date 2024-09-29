@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+<TextView
+    android:id="@+id/regText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:fontFamily="@font/opensansbold"
+    android:layout_gravity="center"
+    android:text="@string/register"
+    android:textColor="@color/dark_pink"
+    android:textSize="50sp"
+    tools:ignore="MissingConstraints" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="190dp"
+    android:background="@drawable/book" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:boxBackgroundColor="@android:color/transparent"
+    android:background="@android:color/transparent"
+    app:boxStrokeWidth="0dp"
+    app:boxStrokeWidthFocused="0dp"
+   >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/email"
+        android:layout_marginTop="25dp"
+        android:hint="Enter your email"
+        android:background="@drawable/custom_input"
+        android:inputType="textEmailAddress"
+
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:boxBackgroundColor="@android:color/transparent"
+    android:background="@android:color/transparent"
+    app:boxStrokeWidth="0dp"
+    app:boxStrokeWidthFocused="0dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/password"
+        android:layout_marginTop="25dp"
+        android:hint="Enter your password"
+        android:background="@drawable/custom_input"
+        android:inputType="textPassword"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/btnRegister"
+    android:layout_width="139dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="40sp"
+    android:background="@drawable/custom_button"
+    android:text="@string/register"
+    app:backgroundTint="#EA4C89" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/opensansregular"
+        android:gravity="center"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+
+</LinearLayout>
